@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!-- Íconos de FontAwesome -->
-    <link rel="stylesheet" href="HTML carta de presentacion/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/Gallery.css">
 </head>
 
 <style>
     body{
         background: linear-gradient(to right, #0097B2, #007bff);
-  z-index: 1000; /* Asegúrate de que este valor sea alto */
+        z-index: 1000; /* Asegúrate de que este valor sea alto */
+        width: 100%;
 
     }
     .logo_img{
@@ -111,7 +115,7 @@
         background: #000;
        }
 
-    .video-container video,
+    .video-container iframe,
     .video-container object,
     .video-container embed {
         position: absolute;
@@ -191,87 +195,74 @@
     }
 
     /*sub menu nav */
-    details {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  width: max-content;
-  padding: 8px 12px;
-}
 
-details summary {
-  font-size: 18px;
-  font-weight: bold;
-  list-style: none;
-}
-
-details[open] .submenu {
-  display: block;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-}
-
-.submenu a {
-  display: block;
-  color: #333;
-  text-decoration: none;
-  padding: 8px 12px;
-  font-size: 16px;
-}
-
-.submenu a:hover {
-  background-color: #f0f0f0;
-}
 
 .p_white{
     color: #ddd;
 }
 
-details {
-  display: inline-block;
+.h1_white{
+    color: #fff;
 }
+
+
 
     
 
 </style>
 <body>
     <a href="https://wa.me/5491124066209" target="_blank">
-        <img class="fixed-image" src="HTML carta de presentacion/logos/whatsapp.png" alt="Imagen fija">
+        <img class="fixed-image" src="/logos/whatsapp.png" alt="Imagen fija">
     </a>
     
-    <header>
-        <a href="#" class="logo">
-          <img class="logo_img" src="HTML carta de presentacion/logos/ChatGPT Image 15 abr 2025, 05_06_28 p.m..png" alt="Logo">
-        </a>
-        <nav>
-          <div class="menu-contacto">
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#sobre-nosotros">Sobre Nosotros</a>
-            
-            <details class="dropdown">
-              <summary>Contacto ▾</summary>
-              <div class="submenu">
-                <a href="https://wa.me/1131321805" target="_blank">WhatsApp</a>
-                <a href="mailto:correo@tudominio.com">Correo</a>
-                <a href="https://www.instagram.com/bagaminglab/">Instagram</a>
-                <a href="#direccion">Dirección</a> 
-              </div>
-            </details>
-          </div>
-        </nav>
-      </header>
+
+      
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">YourBrand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Service 1</a></li>
+                            <li><a class="dropdown-item" href="#">Service 2</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">More Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Sub Service 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Service 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="#">Our Team</a></li>
+                            <li><a class="dropdown-item" href="#">Our History</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+      
 
 
 
@@ -282,7 +273,7 @@ details {
        <!-- Contenido de la página aquí -->
         <h1>Bienvenido a BA Gaming Lab</h1>
         <p> Servicio Tecnico Gaming a Medida |🔧 Reparación de Consolas | 🖥️ Mantenimiento de PC | 🎮 Juegos Digitales</p>
-        <img class="img_destacada" src="HTML carta de presentacion/Sony PlayStation Studios Header.jpeg" alt="consolas Gaming">
+        <img class="img_destacada" src="/Sony PlayStation Studios Header.jpeg" alt="consolas Gaming">
     </section>
      
     <!-- seccion servicios -->
@@ -349,9 +340,9 @@ details {
     <br>
     <br>
     <br>
-    <div style="background-image: url(HTML carta de presentacioncosmos-creative-academy-cover-photo-1.png) ;" class="bg-light">
+    <div style="background-image: url(/cosmos-creative-academy-cover-photo-1.png) ;" class="bg-light">
     <div class="servicio-express">
-        <h2 style="color: #f0f0f0;" class="fw-bold mb-3">🚀 ¡Servicio Exprés de Reparación en 24 Horas!</h2>
+        <h2 style="color: #f0f0f0;"> ¡Servicio Exprés de Reparación en 24 Horas!</h2>
         <p style="color: #ddd;" class="fs-5">Repara tu consola o PC en solo 24 horas o tu diagnóstico será completamente gratis.<br><strong>¡Rapidez y calidad garantizada!</strong></p>
     
         <ul style="color: #ddd;" class="list-unstyled text-start mt-4 mb-4">
@@ -379,59 +370,54 @@ details {
             <div class="col-12">
                 <div class="video-container">
                     <!-- Replace the iframe src with your video source -->
-                     <video autoplay muted playsinline loop>
-                      <source src="32443-392248971_medium.mp4" type="video/mp4">
-                      Tu navegador no soporta el video HTML5.
-                     </video>
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
 
+    <p class="spacer"></p>
 
+    <div class="gallery-title text-center">
+        <h1>Beautiful Image Gallery</h1>
+        <p>A collection of stunning photographs</p>
+    </div>
 
+    <section class="container">
+        <div class="row">
 
-    <br>
-    <br>
-    <br>
-    <br>
+            <div class="col-lg-4 col-md-6 gallery-item">
+                <img src="/imgs trabajos Tech/Img_ps4_1.png" alt="Animals" class="img-fluid">
+            </div>
 
-    <h3 class="encabezado">Galeria</h3>
-    <div class="image-grid">
-        <div class="image-item">
-          <img src="HTML carta de presentacion/imgs trabajos Tech/Img_ps4_1.png" alt="Imagen 1">
-        </div>
-        <div class="image-item">
-          <img src="HTML carta de presentacion/imgs trabajos Tech/Img_ps4_2.png" alt="Imagen 2">
-        </div>
-        <div class="image-item">
-          <img src="HTML carta de presentacion/imgs trabajos Tech/img_ps4_3.png" alt="Imagen 3">
-        </div>
-      </div>
+            <div class="col-lg-4 col-md-6 gallery-item">
+                <img src="/imgs trabajos Tech/Img_ps4_2.png" alt="Architecture" class="img-fluid">
+            </div>
 
-      <div class="image-grid">
-        <div class="image-item">
-          <img src="HTML carta de presentacion/imgs trabajos Tech/img_ps4_4.png" alt="Imagen 1">
-        </div>
-        <div class="image-item">
-          <img src="HTML carta de presentacion/imgs trabajos Tech/Img_ps4_5.png" alt="Imagen 2">
-        </div>
-      </div>
-      <br>
-      <div class="image-grid">
-        <div class="image-item">
-          <img src="HTML carta de presentacion/imgs trabajos Tech/psvita_img3.jpg" alt="Imagen 1">
-        </div>
-        <div class="image-item">
-          <img src="HTML carta de presentacion/imgs trabajos Tech/img_psvita2.jpg" alt="Imagen 2">
-        </div>
-        <div class="image-item">
-          <img src="HTML carta de presentacion/imgs trabajos Tech/img_psvitajpg.jpg" alt="Imagen 3">
-        </div>
-      </div>
-      
+            <div class="col-lg-4 col-md-6 gallery-item">
+                <img src="/imgs trabajos Tech/img_ps4_3.png" alt="Travel" class="img-fluid">
+            </div>
 
-      <p class="spacer"></p>
+            <div class="col-lg-4 col-md-6 gallery-item">
+                <img src="/imgs trabajos Tech/img_ps4_4.png" alt="Beach" class="img-fluid">
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item">
+                <img src="/imgs trabajos Tech/Img_ps4_5.png" alt="Mountains" class="img-fluid">
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item">
+                <img src="/imgs trabajos Tech/img_psvitajpg.jpg" alt="Nature" class="img-fluid">
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item">
+                <img src="/imgs trabajos Tech/psvita_img3.jpg" alt="Nature" class="img-fluid">
+            </div>
+
+        </div>
+    </section>
 
 
 
@@ -447,7 +433,7 @@ details {
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img class="img-content" src="HTML carta de presentacion/imgs trabajos Tech/3405161.jpg"/>
+                                <img class="img-content" src="/imgs trabajos Tech/3405161.jpg"/>
                                 
                             </div>
                             <div class="flip-card-back">
@@ -461,7 +447,7 @@ details {
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img class="img-content" src="HTML carta de presentacion/imgs trabajos Tech/Faster-Internet-with-Privacy-Focused-1.1.1.1-DNS-Service-1.jpg"/>
+                                <img class="img-content" src="/imgs trabajos Tech/Faster-Internet-with-Privacy-Focused-1.1.1.1-DNS-Service-1.jpg"/>
                                 
                             </div>
                             <div class="flip-card-back">
@@ -475,7 +461,7 @@ details {
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img class="img-content" src="HTML carta de presentacion/imgs trabajos Tech/wpd-logo.jpg"/>
+                                <img class="img-content" src="/imgs trabajos Tech/wpd-logo.jpg"/>
                                 
                             </div>
                             <div class="flip-card-back">
@@ -518,7 +504,7 @@ details {
                             <div class="flip-card-back">
                                 <h4 class="title_img">PC Building Simulator</h4>
                                 <p>Un simulador sofisticado que te permite hacer uso de tus conocimientos de hardware y montaje de PCs en un entorno virtual seguro y controlado, aprende de una forma practica la arquitectura, funciones de cada pieza, los problemas comunes,  pasos para armar y desarmar una PC  </p>
-                                <button class="boton-capsula" onclick="window.open('https://www.youtube.com/watch?v=MbORFmkTEKo', '_blank');">Más información aquí</button>
+                                <button class="boton-capsula" onclick="window.open('https://temp-mail.org/en/', '_blank');">Más información aquí</button>
                             </div>
                         </div>
                     </div>
@@ -542,6 +528,8 @@ details {
             <br>
 
         </ul>
+
+        
     </section>
 
     <section id="about-us">
@@ -598,6 +586,7 @@ details {
     });
 </script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+ <script src="/scripts/jscript"></script>
 </body>
 
 </html>
