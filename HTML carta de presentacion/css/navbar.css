@@ -3,6 +3,7 @@
     position: fixed;
     width: 100%;
     z-index: 1000; /* Asegura que esté sobre otros elementos */
+    padding: 7px;
 
  }
  .navbar-brand {
