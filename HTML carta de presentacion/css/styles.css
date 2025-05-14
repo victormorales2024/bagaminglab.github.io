@@ -114,7 +114,7 @@
 }
 
 .flip-card-front {
-    background: linear-gradient(45deg, #0077B6, #00B4D8); /* Azul moderno */
+    background: linear-gradient(45deg, cyan, #00B4D8); /* Azul moderno */
 }
 .flip-card-back {
     background: linear-gradient(45deg, #FF6B6B, #FFB830); /* Rojo vibrante */
@@ -228,38 +228,32 @@
       margin-bottom: 30px;
     }
 
+
+    h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
   /* header y nav*/
 
-  header {
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
-    backdrop-filter: blur(10px); /* Efecto glassmorphism moderno */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
+  
 
   .logo {
     font-size: 24px;
     font-weight: bold;
     color: #FF8C00;
     text-decoration: none;
-  }
-
-  nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-left: 25px;
-    font-size: 18px;
-    transition: color 0.3s;
-  }
-
-  nav a:hover {
-    color: #FF8C00;
   }
   /* */
 
@@ -318,4 +312,3 @@
 }
 
 /*   */
-
