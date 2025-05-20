@@ -1,0 +1,34 @@
+/* Estilos para dispositivos pequeños (teléfonos) */
+@media (max-width: 576px) {
+    
+    #slider1{
+        width: 100%;
+        height: 200px;
+    }
+
+
+
+}
+
+/* Estilos para dispositivos medianos (tabletas) */
+@media (min-width: 577px) and (max-width: 768px) {
+   
+    #carouselExampleAutoplaying{
+        padding: 20px;
+    }
+}
+
+/* Estilos para dispositivos grandes (escritorios) */
+@media (min-width: 769px) {
+    body {
+    background-image: url('/3405161.jpg');
+    background-size: auto; /* Mantiene el tamaño original de la imagen */
+    background-repeat: repeat; /* Repite la imagen en todo el fondo */
+    background-position: center; /* Centra el patrón */
+    z-index: 1000; /* Asegúrate de que este valor sea alto */
+    width: 100%;
+}
+
+
+    
+}
