@@ -21,7 +21,7 @@
 /* Estilos para dispositivos grandes (escritorios) */
 @media (min-width: 769px) {
     body {
-    background-image: url('background.png');
+    background-image: url('HTML carta de presentacion/css/background.png');
     background-size: auto; /* Mantiene el tamaño original de la imagen */
     background-repeat: repeat; /* Repite la imagen en todo el fondo */
     background-position: center; /* Centra el patrón */
